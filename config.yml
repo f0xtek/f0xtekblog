@@ -1,0 +1,76 @@
+baseURL: https://blog.f0xtek.com/
+languageCode: en-us
+title: Blog | f0xtek
+theme: "PaperMod"
+paginate: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: Blog | f0xtek
+  description: cat /dev/brain >> /dev/blog
+  keywords: [Blog]
+  author: f0xtek
+  DateFormat: "january 2, 2006"
+  defaultTheme: dark
+  disableThemeToggle: false
+  showReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/f0xtek"
+    - name: github
+      url: "https://github.com/f0xtek"
+    - name: linkedin
+      url: "https://linkedin.com/in/landerson61"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/f0xtek/blog/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
