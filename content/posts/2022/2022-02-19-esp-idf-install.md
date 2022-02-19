@@ -1,7 +1,7 @@
 ---
 title: "ESP-IDF Install"
 date: 2022-02-19T17:27:29Z
-draft: true
+draft: false
 categories:
   - embedded
   - esp32
